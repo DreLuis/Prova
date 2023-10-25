@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TravelWorld</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header id="cabeca">
+        <h1>Pacífico Paradise</h1>
+        <p class="desc">Sejam bem vindos ao Pacífo Paradise, onde você encontrará a sua viagem dos sonhos</p>
+    </header>
+    <section class="sec">
+        <h2>Parque</h2>
+        <img class="logo" src="img/nicolandia-divulgacao.jpeg"  alt="Parque">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Accusamus laborum in vitae repudiandae fuga tenetur libero fugit voluptas vel, 
+            impedit magnam qui similique, nulla eligendi quibusdam, dignissimos repellendus? Adipisci, quaerat!
+        </p>
+        <p><a href=""> clique aqui para saber mais</a></p>
+
+        <h3>Galeria</h3>
+
+        <div id="imgs">
+            <img src="img/nicolandia-divulgacao.jpeg" onclick="clicar()" alt="imagem1"/>
+            <br/>
+
+            <img src="img/parque_diversao-847x563.jpg" onclick="clicar()" alt="imagem2"/>
+            <br/>
+
+            <img src="img/melhores-parques-de-diversoes-do-brasil-21.webp" onclick="clicar()" alt="imagem3"/>
+            <br/>
+
+            <img src="img/a925d090-60c7-49d2-beeb-74f2d4a0c423.avif" onclick="clicar()" alt="imagem4">
+            <br/>
+
+            <img src="img/Alpen-Park-Credito-editorial-Celli07-Shutterstock.com-shutterstock_1587903439.jpg" onclick="clicar()" alt="imagem5">
+            <br/>
+
+            <img src="img/hallstatt-cidades-nas-montanhas-na-europa.jpg.webp" onclick="clicar()" alt="imagem6">
+            <br/>
+        </div>
+
+    </section>
+    </br>
+
+    <section class="sec">
+        <h2>Montanhas</h2>
+        <img class="logo" src="img/estrada_Tian_Men_montain.jpg" alt="Tianmen">
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Quidem iste, minima a aliquam rerum doloremque quis, porro alias est nulla impedit! 
+            Dolorem dolore nihil suscipit non consequuntur quibusdam! Saepe, ipsa.
+        </p>
+        <p><a href=""> clique aqui para saber mais</a></p>
+
+        <h3>Galeria</h3>
+
+        <div id="imgs">
+            <img src="img/estrada_Tian_Men_montain.jpg" onclick="clicar()" alt="imagem1"/>
+            <br/>
+
+            <img src="img/uma-pintura-de-um-lago-de-montanha-com-uma-montanha-ao-fundo.jpg" onclick="clicar()" alt="imagem2"/>
+            <br/>
+
+            <img src="img/montanha.jpg" onclick="clicar()" alt="imagem3"/>
+            <br/>
+
+            <img src="img/tyfg7tk7aaf0m4dg1n5j.jpg" onclick="clicar()" alt="imagem4">
+            <br/>
+
+            <img src="img/Melhores-Praias-do-Brasil.jpg" onclick="clicar()" alt="imagem5">
+            <br/>
+
+            <img src="img/hallstatt-cidades-nas-montanhas-na-europa.jpg.webp" onclick="clicar()" alt="imagem6">
+            <br/>
+        </div>
+    </section>
+    </br>
+
+    <section class="sec">
+        <h2>Prais do Arquipelogo</h2>
+        <img class="logo" src="img/praias-brasil-sancho.jpg" alt="prais">
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Minus quasi debitis alias dolorem hic, tempora expedita veritatis architecto corporis quis nesciunt, 
+            facilis dolores saepe aliquid quae commodi molestias aliquam unde.
+        </p>
+        <p><a href=""> clique aqui para saber mais</a></p>
+
+        <h3>Galeria</h3>
+
+        <div id="imgs">
+            <img src="img/bela-foto-aerea-de-uma-praia-com-colinas-ao-fundo-ao-por-do-sol.jpg" onclick="clicar()" alt="imagem1"/>
+            <br/>
+
+            <img src="img/BLOG-13.jpg" onclick="clicar()" alt="imagem2"/>
+            <br/>
+
+            <img src="img/praias-maldivas-imagens.jpg" onclick="clicar()" alt="imagem3"/>
+            <br/>
+
+            <img src="img/praias-brasil-sancho.jpg" onclick="clicar()" alt="imagem4">
+            <br/>
+
+            <img src="img/Melhores-Praias-do-Brasil.jpg" onclick="clicar()" alt="imagem5">
+            <br/>
+
+            <img src="img/melhores-praias-do-mundo-1.jpg.optimal.jpg" onclick="clicar()" alt="imagem6">
+            <br/>
+        </div>
+    </section>
+
+    <section>
+        <h2>Comentarios</h2>
+
+        <form>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required><br><br>
+        
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required><br><br>
+        
+            <label for="senha">Senha:</label>
+            <input type="password" id="senha" name="senha" required><br><br>
+
+            <label for="mensagem">Mensagem:</label><br>
+            <textarea id="mensagem" name="mensagem" rows="4" cols="50"></textarea><br><br>
+        
+            <input type="submit" value="Cadastrar">
+        </form>
+    </section>
+
+</body>
+<script>
+    function clicar(sec) {
+        var imgAmp = document.createElement('div')
+        imgAmp.id = 'imgAmp';
+        imgAmp.className = 'ampliada';
+
+        var imagemAmpliada = document.createElement('img');
+        imagemAmpliada.src = imgs.src;
+        
+        imgAmp.appendChild(imagemAmpliada);
+        document.body.appendChild(imgAmp);
+        imgAmp.style.display = 'block';
+
+        imagemAmpliada.addEventListener('click', () => {
+            imgAmp.style.display = 'none';
+            imgAmp.innerHTML = ';'
+        });
+    }
+</script>
+</html>
